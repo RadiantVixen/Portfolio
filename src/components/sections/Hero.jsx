@@ -1,6 +1,6 @@
 import { CustomButton } from "../buttons/CustomButton";
 import NavBar from "../navbar/NavBar";
-import profile from "../../assets/images/profile.webp";
+import profile from "../../assets/images/me.webp";
 import { useRef } from "react";
 import hover3d from "../../utils/hover";
 import { motion } from 'framer-motion';

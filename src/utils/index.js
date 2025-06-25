@@ -11,7 +11,7 @@ import a5 from "../assets/images/a5.webp";
 
 
 export const headlines = [
-    "Hi, I'm Clayton.",
+    "Hi, I'm Aicha.",
     "I'm a Software Developer",
     "Over the past few years, I've immersed myself in building and scaling backend software while actively tackling frontend challenges."
 ];
@@ -28,7 +28,7 @@ export const projects = [
     {
         title: 'SkyCast',
         image: cast,
-        linkGithub: 'https://github.com/bjclayton/SkyCast',
+        linkGithub: 'https://github.com/RadiantVixen/SkyCast',
         linkOnline: 'https://sky-cast-taupe.vercel.app/',
         description: 'SkyCast is a web app that provides real-time weather conditions and forecasts for selected cities.',
         techStack: ['React', 'Tailwind CSS', 'Firebase', 'Weather API']
@@ -44,7 +44,7 @@ export const projects = [
     {
         title: 'ChatGenius',
         image: chat,
-        linkGithub: 'https://github.com/bjclayton/ChatGenius',
+        linkGithub: 'https://github.com/RadiantVixen/ChatGenius',
         linkOnline: 'https://chat-genius-puce.vercel.app/',
         description: 'A web application that harnesses the power of Large Language Models (LLMs) to facilitate natural and engaging conversations.',
         techStack: ['React', 'Tailwind CSS', 'Firebase', 'Replicate', 'Llama2']
@@ -52,7 +52,7 @@ export const projects = [
     {
         title: 'History Tracer',
         image: tracer,
-        linkGithub: 'https://github.com/bjclayton/History-Tracer',
+        linkGithub: 'https://github.com/RadiantVixen/History-Tracer',
         linkOnline: null,
         description: 'History Tracer is A desktop application that reads history data from different web browsers and displays it in a table.',
         techStack: ['Java Swing', 'SQLite JDBC']
@@ -60,7 +60,7 @@ export const projects = [
     {
         title: 'InstaWall',
         image: insta,
-        linkGithub: 'https://github.com/bjclayton/InstaWall',
+        linkGithub: 'https://github.com/RadiantVixen/InstaWall',
         linkOnline: null,
         description: 'InstaWall is a mobile application that allows users to discover, search, like, and share wallpapers from the Unsplash API.',
         techStack: ['Dart', 'Flutter', 'Firebase']
@@ -68,7 +68,7 @@ export const projects = [
     {
         title: 'PenX',
         image: pen,
-        linkGithub: 'https://github.com/bjclayton/PenX',
+        linkGithub: 'https://github.com/RadiantVixen/PenX',
         linkOnline: 'https://pen-x.vercel.app/',
         description: 'A blog application built with React. It allows users to create and publish blog posts, as well as view and comment on other users\' posts.',
         techStack: ['MERN Stack', 'Tailwind CSS']
@@ -127,7 +127,7 @@ export const articles = [
 
 
 export const metadata = {
-    title: "John Clayton Blanc",
+    title: "Aicha Atki Blanc",
     description: "This portfolio is a collection of my work that showcases my skills and creativity.",
     imageURL: "https://avatars.githubusercontent.com/u/108766949?s=400&u=1671b3dfc6d09709a394c94b1566e56e6e3e16cd&v=4",
     pageUrl: "https://www.johnclaytonblanc.com"

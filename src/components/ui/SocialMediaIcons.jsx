@@ -38,15 +38,15 @@ export const SocialMediaIcons = () => {
 
 const socialMediaLinks = [
     {
-        url: 'https://www.linkedin.com/in/johnclaytonblanc',
+        url: 'https://www.linkedin.com/in/aicha-atki/',
         iconComponent: <FaLinkedin className="fill-white hover:fill-secondary" size={25} />
     },
     {
-        url: 'https://github.com/bjclayton',
+        url: 'https://github.com/RadiantVixen',
         iconComponent: <FaGithub className="fill-white hover:fill-secondary" size={25} />
     },
     {
-        url: 'https://medium.com/@jclaytonblanc',
+        url: 'https://medium.com/@consolevexin',
         iconComponent: <FaMedium className="fill-white hover:fill-secondary" size={25} />
     },
 ];

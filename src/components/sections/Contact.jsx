@@ -180,20 +180,20 @@ const contactData = [
     {
         title: "Email",
         icon: <MdEmail size={24} />,
-        info: "jclaytonblanc@gmail.com",
-        path: "mailto:jclaytonblanc@gmail.com"
+        info: "aichaatki@gmail.com",
+        path: "mailto:aichaatki@gmail.com"
     },
     {
         title: "LinkedIn",
         icon: <FaLinkedin size={24} />,
-        info: "@johnclaytonblanc",
-        path: "https://www.linkedin.com/in/johnclaytonblanc"
+        info: "@aichaatki",
+        path: "https://www.linkedin.com/in/aicha-atki/"
     },
     {
         title: "Medium",
         icon: <FaMedium size={24} />,
-        info: "@jclaytonblanc",
-        path: "https://medium.com/@jclaytonblanc"
+        info: "@consolevexin",
+        path: "https://medium.com/@consolevexin"
     },
 ];
 
