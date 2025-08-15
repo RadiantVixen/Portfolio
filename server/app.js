@@ -11,8 +11,7 @@ const resend = new Resend(process.env.APIKEY);
 app.use(
     cors({
         origin: [
-            "https://www.johnclaytonblanc.com",
-            "https://johnclayton.vercel.app",
+            "https://sprightly-duckanoo-aa94bf.netlify.app"
         ],
     })
 );
