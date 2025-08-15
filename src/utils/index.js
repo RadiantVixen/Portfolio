@@ -113,14 +113,14 @@ export const articles = [
     {
         title: "Google Search vs Local PC Search",
         resume: "Have you ever experienced the frustration of waiting for your computer to cough up search results while Google effortlessly delivers them in the blink of an eye? 😩 A simple Google search yields results in a mere 0.28 seconds...",
-        url: "https://medium.com/ai-mind-labs/google-search-vs-local-pc-search-902a6291e6ce",
+        url: "https://medium.com/@consolevexin/how-ai-can-inherit-our-biases-daf67407fe8d",
         image: a4
     },
     {
         title: "The JavaScript Universe: Imperfections and Essential Insights",
         resume: "In the ever-evolving world of web development, JavaScript reigns supreme. From crafting dynamic, interactive websites to powering complex server-side applications, its versatility knows no bounds.",
         url:
-            "https://pub.aimind.so/the-javascript-universe-imperfections-and-essential-insights-fc9be3e65af4",
+            "https://medium.com/@consolevexin/how-ai-can-inherit-our-biases-daf67407fe8d",
         image: a2
     },
 ];
