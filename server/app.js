@@ -16,6 +16,7 @@ app.use(
         ],
     })
 );
+
 app.use(json());
 
 app.use("/send-email", async (req, res) => {

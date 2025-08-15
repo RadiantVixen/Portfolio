@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
     "@tabler/icons-react": "^2.47.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@vercel/analytics": "^1.2.2",

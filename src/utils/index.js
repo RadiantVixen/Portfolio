@@ -101,13 +101,13 @@ export const articles = [
         title: "LLaMA CPP and Python: The Easiest Way to Build Your Own ChatGPT",
         resume: "Today, we hear a lot about large language models (LLMs) like GPT-3, GPT-4, PaLM, Gopher, etc. These models have shown their capacity to solve problems and generate text.",
         url:
-            "https://medium.com/ai-mind-labs/llama-cpp-and-python-the-easiest-way-to-build-your-own-chatgpt-e473a9847878",
+            "https://medium.com/@consolevexin/llama-cpp-and-python-the-easiest-way-to-build-your-own-chatgpt-4430cb3feeda",
         image: a1
     },
     {
         title: "How AI can inherit our biases",
         resume: " In 2014, a prominent example occurred when Amazon developed an AI-based recruiting tool. Designed to streamline resume screening, the algorithm ended up discriminating against women. Why? Because it was trained on a dataset...",
-        url: "https://medium.com/p/e3a367a18104",
+        url: "https://medium.com/@consolevexin/how-ai-can-inherit-our-biases-daf67407fe8d",
         image: a5
     },
     {
