@@ -719,9 +719,7 @@ function initEventListeners() {
   const EMAILJS_SERVICE_ID  = "service_abc123";   // Email Services tab
   const EMAILJS_TEMPLATE_ID = "template_sybwtcd";  // Email Templates tab
 
-  if (EMAILJS_PUBLIC_KEY !== "sMHz3cJOmLgzdO73W") {
-    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
-  }
+  emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
   const contactForm   = document.getElementById("contact-form");
   const submitBtn     = document.getElementById("contact-submit");
