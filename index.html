@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aicha Atki (@RadiantVixen) | BCI & Machine Learning Student</title>
+  <meta name="description" content="Portfolio of Aicha Atki (@RadiantVixen) - Machine Learning & AI Student at 42 Network specializing in Brain-Computer Interfaces (BCI), Neurotechnology, Neural Networks, and Software Engineering.">
+  <meta name="keywords" content="Aicha Atki, RadiantVixen, Brain-Computer Interface, BCI, Neurotechnology, Machine Learning, AI, 42 Network, Neural Networks, Reinforcement Learning, EEG, Flutter, Django, C, C++">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Interactive Neural Canvas Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="toast hidden">
+    <span id="toast-icon">✓</span>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-accent">&lt;</span>AICHA<span class="logo-dot">.</span>ATKI<span class="logo-accent">&nbsp;/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">BCI & AI Projects</a>
+        <a href="#terminal-section" class="nav-link">Terminal</a>
+        <a href="#timeline" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://linkedin.com/in/aicha-atki" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="LinkedIn Profile">
+          <svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/RadiantVixen" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="GitHub Profile">
+          <svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="assets/Aicha_Atki_CV.pdf" download="Aicha_Atki_CV.pdf" class="btn btn-primary btn-sm">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          CV Download
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-group">
+            <span class="badge badge-bci">
+              <span class="badge-ping"></span>
+              🧠 Brain-Computer Interfaces & Neurotech
+            </span>
+            <span class="badge badge-cyber">42 Network • Level 18.20</span>
+            <span class="badge badge-accent">@RadiantVixen</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Aicha Atki</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">Engineering</span>
+            <span id="typewriter-text" class="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Machine Learning & AI student at 42 Network. Driven by the intersection of artificial intelligence and neuroscience, specializing in Brain-Computer Interfaces (BCI), EEG signal processing, neural networks, and software engineering.
+          </p>
+
+          <!-- Quick Stats Row -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-value text-orange">🧠 BCI</div>
+              <div class="stat-label">Brain Interface Focus</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value text-purple">18.20</div>
+              <div class="stat-label">42 Network Level</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value text-cyan">44+</div>
+              <div class="stat-label">GitHub Repositories</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="demo.html?project=bci-vortex" class="btn btn-gradient btn-lg">
+              <svg style="width: 18px; height: 18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Launch Live BCI Demo
+            </a>
+            <a href="https://linkedin.com/in/aicha-atki" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+              <svg style="width: 18px; height: 18px;" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              LinkedIn Profile
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-card">
+              <img src="assets/avatar.webp" alt="Aicha Atki Profile" class="avatar-img">
+              <div class="avatar-badge">
+                <span class="status-dot"></span>
+                BCI & Neurotech AI Student
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">// BACKGROUND & VISION</span>
+          <h2 class="section-title">About <span class="text-gradient">Aicha</span></h2>
+          <p class="section-desc">Computer Science Student @ 42 Network • AI, Machine Learning & Neurotechnology</p>
+        </div>
+
+        <!-- Featured Bio Card -->
+        <div class="glass-card" style="padding: 2.5rem; margin-bottom: 2.5rem; border: 1px solid var(--border-glow); box-shadow: var(--shadow-glow-orange);">
+          <p style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 1.25rem; line-height: 1.8;">
+            I’m a <strong>Computer Science student at 42 Network</strong> with a strong interest in <strong>Artificial Intelligence and Machine Learning</strong>. My journey started with mathematics, algorithms and software engineering, and gradually evolved toward building intelligent systems—from AI algorithms and reinforcement learning agents to neural networks and data-driven models.
+          </p>
+
+          <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.8;">
+            What motivates me most is understanding how intelligent systems work and turning that understanding into something I can actually build. I enjoy going beyond using existing tools and digging into the algorithms, mathematics and reasoning behind them.
+          </p>
+
+          <p style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.8;">
+            I’m currently developing my skills across <strong>Machine Learning, Deep Learning, NLP and data-driven AI</strong> while exploring the intersection between artificial intelligence and neuroscience. My long-term ambition is to specialize in <strong>Brain-Computer Interfaces and neurotechnology</strong>, using AI to create systems that can interact more naturally with the human brain.
+          </p>
+
+          <p style="font-size: 1.02rem; color: var(--color-orange); font-family: var(--font-mono); margin: 0; line-height: 1.7;">
+            This portfolio is a collection of the projects, experiments and ideas that represent that journey—from the algorithms I built from scratch to the AI systems I continue to explore.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <div class="card-icon orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"></path>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <h3>Brain-Computer Interfaces</h3>
+            <p>Processing EEG brainwave signals, discrete Fast Fourier Transforms (FFT), and frequency spectrum analysis to build human-machine interfaces controlled directly through brain activity.</p>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="card-icon purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>AI & Deep Learning</h3>
+            <p>From custom Multilayer Perceptrons and Q-Learning reinforcement agents (Learn2Slither) to gradient descent optimization (ft_linear_regression) and Minimax search trees (Gomoku).</p>
+          </div>
+
+          <div class="about-card glass-card">
+            <div class="card-icon cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3>Software & Startups</h3>
+            <p>Founder & Mobile Developer of Darkey (built with Flutter & Supabase), paired with professional Django REST API backend engineering experience and 42 Network peer training.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-darker">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">// TECHNICAL COMPETENCIES</span>
+          <h2 class="section-title">Skills & <span class="text-gradient">Specializations</span></h2>
+          <p class="section-desc">Core proficiencies across BCI signal processing, machine learning models, algorithms, and software development.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- Dynamically populated skills -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">// INTERACTIVE DEMOS & PORTFOLIO</span>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="section-desc">Run live BCI & AI simulations directly in your browser or inspect code repositories on <a href="https://github.com/RadiantVixen" target="_blank" class="text-orange">GitHub</a>.</p>
+        </div>
+
+        <!-- Filter & Search Bar -->
+        <div class="filter-wrapper">
+          <div class="filter-tabs" id="project-filters">
+            <button class="filter-btn active" data-filter="bci-ai">🧠 BCI & Neural Systems</button>
+            <button class="filter-btn" data-filter="ai-ml">🤖 Machine Learning & RL</button>
+            <button class="filter-btn" data-filter="mobile">📱 Mobile & Startup</button>
+            <button class="filter-btn" data-filter="fullstack">⚡ Full-Stack & Web</button>
+            <button class="filter-btn" data-filter="all">📦 All Projects</button>
+          </div>
+
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="project-search" placeholder="Search BCI, AI models, Flutter, C++...">
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated projects -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Section -->
+    <section id="terminal-section" class="section section-darker">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">// INTERACTIVE SHELL</span>
+          <h2 class="section-title">BCI Lab <span class="text-gradient">Terminal CLI</span></h2>
+          <p class="section-desc">Execute shell commands to query Aicha's BCI research, AI projects, skills, and social links.</p>
+        </div>
+
+        <div class="terminal-container glass-card">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="btn-dot close"></span>
+              <span class="btn-dot minimize"></span>
+              <span class="btn-dot maximize"></span>
+            </div>
+            <div class="terminal-title">aatki@bci-lab:~ (zsh)</div>
+            <div class="terminal-badge">ONLINE</div>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-welcome">
+              Welcome to Aicha Atki's BCI & AI Interactive Terminal v3.0.0<br>
+              Type <span class="command-highlight">help</span> to view available commands.<br>
+              Try: <span class="command-highlight">cat bio.txt</span>, <span class="command-highlight">skills</span>, <span class="command-highlight">projects</span>, <span class="command-highlight">linkedin</span>, or <span class="command-highlight">contact</span>.
+            </div>
+            <div id="terminal-output"></div>
+            <div class="terminal-input-line">
+              <span class="prompt-user">aatki@bci-lab</span>:<span class="prompt-dir">~</span>$&nbsp;
+              <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" autofocus>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey / Timeline Section -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">// ACADEMIC & CAREER MILESTONES</span>
+          <h2 class="section-title">Education & <span class="text-gradient">Experience</span></h2>
+          <p class="section-desc">Academic path from university mathematics to 42 Network and BCI neurotech specialization.</p>
+        </div>
+
+        <div class="timeline-wrapper" id="timeline-container">
+          <!-- Dynamically populated timeline -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-darker">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">// GET IN TOUCH</span>
+          <h2 class="section-title">Contact <span class="text-gradient">Aicha</span></h2>
+          <p class="section-desc">Open for BCI research opportunities, AI engineering roles, and technical collaborations.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card glass-card">
+            <h3>Let's Connect</h3>
+            <p>Reach out directly via email at <strong>aichaatki@gmail.com</strong> or via LinkedIn and GitHub!</p>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon orange">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Direct Email</span>
+                  <a href="mailto:aichaatki@gmail.com" class="method-value">aichaatki@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="aichaatki@gmail.com" title="Copy Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon purple">
+                  <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">LinkedIn Profile</span>
+                  <a href="https://linkedin.com/in/aicha-atki" target="_blank" rel="noopener noreferrer" class="method-value">linkedin.com/in/aicha-atki</a>
+                </div>
+                <button class="copy-btn" data-copy="https://linkedin.com/in/aicha-atki" title="Copy LinkedIn URL">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon cyan">
+                  <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">GitHub Profile</span>
+                  <a href="https://github.com/RadiantVixen" target="_blank" rel="noopener noreferrer" class="method-value">github.com/RadiantVixen</a>
+                </div>
+                <button class="copy-btn" data-copy="https://github.com/RadiantVixen" title="Copy GitHub URL">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card glass-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Name / Organization</label>
+                <input type="text" id="contact-name" placeholder="Dr. Jane Smith" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" placeholder="jane@neurotech-lab.org" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" rows="4" placeholder="Hi Aicha, I'd like to discuss a Brain-Computer Interface research or engineering opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gradient btn-full">
+                Send Email to aichaatki@gmail.com
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal-overlay hidden">
+    <div class="modal-card glass-card">
+      <button id="modal-close" class="modal-close" aria-label="Close modal">&times;</button>
+      <div id="modal-content">
+        <!-- Content inserted dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-accent">&lt;</span>AICHA<span class="logo-dot">.</span>ATKI<span class="logo-accent">&nbsp;/&gt;</span>
+        <p>Machine Learning & AI Student @ 42 Network • BCI & Neurotechnology Specialist</p>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Aicha Atki. Focused on Brain-Computer Interfaces & Neurotech.
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
