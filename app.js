@@ -1,6 +1,6 @@
 /* ==========================================================================
    Aicha Atki Portfolio - JavaScript Application Logic
-   Interactive BCI & Neural particle canvas, GitHub/LinkedIn integrations,
+   Interactive Brain Neural particle canvas, GitHub/LinkedIn integrations,
    standalone live demo router, terminal CLI, & typewriter effect.
    ========================================================================== */
 
@@ -9,26 +9,15 @@ const PORTFOLIO_DATA = {
   profile: {
     name: "Aicha Atki",
     username: "RadiantVixen",
-    title: "Machine Learning & AI Student • BCI & Neurotechnology Specialist",
-    level: "18.20",
-    campus: "42 Network (Paris)",
+    title: "Machine Learning & AI Engineer",
+    campus: "42 Network",
     email: "aichaatki@gmail.com",
     linkedin: "https://linkedin.com/in/aicha-atki",
     github: "https://github.com/RadiantVixen",
-    bio: "Computer Science student at 42 Network with a strong interest in Artificial Intelligence, Machine Learning, and Neurotechnology. Building intelligent systems—from AI algorithms and reinforcement learning agents to deep neural networks and Brain-Computer Interfaces."
+    bio: "Computer Science student at 42 Network focused on Machine Learning, Artificial Intelligence, and Software Engineering. Building intelligent systems—from AI algorithms and reinforcement learning agents to deep neural networks and data-driven models."
   },
 
   skills: [
-    {
-      category: "Brain-Computer Interfaces & Neurotech",
-      icon: "brain",
-      items: [
-        { name: "EEG Brainwave Data Processing", level: 92 },
-        { name: "Neural Signal Feature Extraction & FFT", level: 90 },
-        { name: "Human-Machine Brain Interfaces", level: 88 },
-        { name: "Neurotech & Intention Classification", level: 86 }
-      ]
-    },
     {
       category: "AI & Machine Learning",
       icon: "cpu",
@@ -37,6 +26,7 @@ const PORTFOLIO_DATA = {
         { name: "Reinforcement Learning (Q-Learning / RL)", level: 90 },
         { name: "One-Vs-All Logistic & Linear Regression", level: 95 },
         { name: "Heuristic Search & Minimax Algorithms", level: 94 },
+        { name: "EEG Signal Processing & Brainwave Analysis", level: 90 },
         { name: "Python (NumPy, Pandas, Data Analysis)", level: 94 }
       ]
     },
@@ -65,42 +55,16 @@ const PORTFOLIO_DATA = {
   projects: [
     {
       id: "bci-vortex",
-      title: "Total Perspective Vortex — Brain-Computer Interface",
-      category: "bci-ai",
+      title: "Total Perspective Vortex — Brainwave Signal Interface",
+      category: "ai-ml",
       date: "Aug 2026",
       score: "125%",
-      shortDesc: "Human-machine brain interface processing high-dimensional EEG brainwave signals into machine control actions.",
+      shortDesc: "Human-machine interface processing high-dimensional EEG brainwave signals into machine control actions.",
       fullDesc: "Processed high-dimensional EEG brainwave data to build a human-machine interface controlled directly through brain activity. Implemented computational signal processing methods, bandpass filtering, Fast Fourier Transform (FFT) power spectral density extraction, and intention decoding models at the intersection of AI, data science, and neuroscience.",
-      tags: ["Python", "Brain-Computer Interface", "EEG Signal Processing", "Neurotech", "AI"],
+      tags: ["Python", "Machine Learning", "EEG Signal Processing", "Brainwave Interface", "AI"],
       github: "https://github.com/RadiantVixen",
       hasLiveDemo: true,
       demoType: "bci-vortex",
-      featured: true
-    },
-    {
-      id: "darkey",
-      title: "Darkey — Rental Opportunity Mobile App",
-      category: "mobile",
-      date: "2025 - Present",
-      score: "Founder",
-      shortDesc: "Startup mobile application helping users discover rental opportunities built with Flutter & Supabase.",
-      fullDesc: "Founder & Mobile Developer of Darkey. Translated product vision into a functional cross-platform mobile application using Flutter and Supabase backend. Leveraged AI-assisted development to accelerate prototyping, backend infrastructure design, and rapid iteration.",
-      tags: ["Flutter", "Supabase", "Mobile Dev", "Startup", "AI-Assisted"],
-      github: "https://github.com/RadiantVixen",
-      hasLiveDemo: false,
-      featured: true
-    },
-    {
-      id: "django-internship",
-      title: "Backend Development Internship",
-      category: "fullstack",
-      date: "Jan 2026",
-      score: "Internship",
-      shortDesc: "Professional backend engineering developing REST APIs and scalable architecture with Django.",
-      fullDesc: "Validated professional internship as part of the 42 curriculum. Developed backend REST API architecture using Django and Python within an engineering team, implementing database models and enterprise web services.",
-      tags: ["Django", "Python", "REST APIs", "Backend Engineering"],
-      github: "https://github.com/RadiantVixen",
-      hasLiveDemo: false,
       featured: true
     },
     {
@@ -174,6 +138,32 @@ const PORTFOLIO_DATA = {
       featured: true
     },
     {
+      id: "darkey",
+      title: "Darkey — Rental Opportunity Mobile App",
+      category: "mobile",
+      date: "2025 - Present",
+      score: "Founder",
+      shortDesc: "Startup mobile application helping users discover rental opportunities built with Flutter & Supabase.",
+      fullDesc: "Founder & Mobile Developer of Darkey. Translated product vision into a functional cross-platform mobile application using Flutter and Supabase backend. Leveraged AI-assisted development to accelerate prototyping, backend infrastructure design, and rapid iteration.",
+      tags: ["Flutter", "Supabase", "Mobile Dev", "Startup", "AI-Assisted"],
+      github: "https://github.com/RadiantVixen",
+      hasLiveDemo: false,
+      featured: true
+    },
+    {
+      id: "django-internship",
+      title: "Backend Development Internship",
+      category: "fullstack",
+      date: "Jan 2026",
+      score: "Internship",
+      shortDesc: "Professional backend engineering developing REST APIs and scalable architecture with Django.",
+      fullDesc: "Validated professional internship as part of the 42 curriculum. Developed backend REST API architecture using Django and Python within an engineering team, implementing database models and enterprise web services.",
+      tags: ["Django", "Python", "REST APIs", "Backend Engineering"],
+      github: "https://github.com/RadiantVixen",
+      hasLiveDemo: false,
+      featured: true
+    },
+    {
       id: "ft_transcendence",
       title: "ft_transcendence — Real-Time Web Application",
       category: "fullstack",
@@ -201,8 +191,8 @@ const PORTFOLIO_DATA = {
     },
     {
       date: "2022 - Present",
-      title: "42 Network — Computer Science (Level 18.20)",
-      desc: "Project-based curriculum in software engineering, algorithms, AI models, BCI signal processing, and low-level systems programming."
+      title: "42 Network — Computer Science",
+      desc: "Project-based curriculum in software engineering, algorithms, AI models, data science, and low-level systems programming."
     },
     {
       date: "2019 - 2022",
@@ -219,10 +209,16 @@ const PORTFOLIO_DATA = {
 
 // --- INITIALIZATION ---
 document.addEventListener("DOMContentLoaded", () => {
+  // Prevent browser auto-scroll on load
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+
   initParticleCanvas();
   initTypewriter();
   renderSkills();
-  renderProjects("bci-ai"); // Default is BCI & Neural Systems!
+  renderProjects("ai-ml"); // Default is AI & Machine Learning!
   renderTimeline();
   initTerminal();
   initEventListeners();
@@ -254,7 +250,6 @@ function initParticleCanvas() {
   const neurons = [];
   const pulses = [];
 
-  // Spawn Neurons (Soma)
   for (let i = 0; i < neuronCount; i++) {
     const isPrimary = i % 4 === 0;
     neurons.push({
@@ -264,12 +259,10 @@ function initParticleCanvas() {
       vy: (Math.random() - 0.5) * 0.4,
       radius: isPrimary ? Math.random() * 2 + 3 : Math.random() * 1.5 + 1.5,
       energy: Math.random() * 0.5,
-      color: isPrimary ? { r: 255, g: 119, b: 0 } : (i % 2 === 0 ? { r: 168, g: 85, b: 247 } : { r: 56, g: 189, b: 248 }),
-      dendrites: []
+      color: isPrimary ? { r: 255, g: 119, b: 0 } : (i % 2 === 0 ? { r: 168, g: 85, b: 247 } : { r: 56, g: 189, b: 248 })
     });
   }
 
-  // Periodic Spontaneous Synaptic Action Potential Firing
   setInterval(() => {
     if (neurons.length > 0) {
       const srcIdx = Math.floor(Math.random() * neurons.length);
@@ -279,7 +272,7 @@ function initParticleCanvas() {
 
   function fireActionPotential(fromIdx) {
     const from = neurons[fromIdx];
-    from.energy = 1.0; // Flash neuron soma
+    from.energy = 1.0;
 
     neurons.forEach((to, toIdx) => {
       if (fromIdx !== toIdx) {
@@ -306,7 +299,6 @@ function initParticleCanvas() {
   function animate() {
     ctx.clearRect(0, 0, width, height);
 
-    // 1. Draw Axon & Dendrite Synapses
     for (let i = 0; i < neurons.length; i++) {
       for (let j = i + 1; j < neurons.length; j++) {
         const n1 = neurons[i];
@@ -327,7 +319,6 @@ function initParticleCanvas() {
       }
     }
 
-    // 2. Animate Action Potential Pulses
     for (let i = pulses.length - 1; i >= 0; i--) {
       const p = pulses[i];
       p.progress += p.speed;
@@ -349,7 +340,6 @@ function initParticleCanvas() {
       }
     }
 
-    // 3. Render Neurons (Soma & Nucleus)
     neurons.forEach((n, idx) => {
       n.x += n.vx;
       n.y += n.vy;
@@ -357,7 +347,6 @@ function initParticleCanvas() {
       if (n.x < 0 || n.x > width) n.vx *= -1;
       if (n.y < 0 || n.y > height) n.vy *= -1;
 
-      // Mouse Electrode Stimulus
       if (mouse.active) {
         const mdx = mouse.x - n.x;
         const mdy = mouse.y - n.y;
@@ -368,10 +357,8 @@ function initParticleCanvas() {
         }
       }
 
-      // Decay Soma Energy
       n.energy *= 0.94;
 
-      // Outer Membrane Glow
       const glowRadius = n.radius * (1 + n.energy * 1.5);
       ctx.beginPath();
       ctx.arc(n.x, n.y, glowRadius, 0, Math.PI * 2);
@@ -380,7 +367,6 @@ function initParticleCanvas() {
       ctx.shadowColor = `rgb(${n.color.r}, ${n.color.g}, ${n.color.b})`;
       ctx.fill();
 
-      // Nucleus
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.radius * 0.6, 0, Math.PI * 2);
       ctx.fillStyle = n.energy > 0.4 ? "#ffffff" : `rgb(${n.color.r}, ${n.color.g}, ${n.color.b})`;
@@ -400,9 +386,9 @@ function initTypewriter() {
   if (!el) return;
 
   const phrases = [
-    "Brain-Computer Interfaces.",
-    "Neural Signal Decoders.",
-    "Deep Neural Networks & RL.",
+    "AI Engineering Models.",
+    "Deep Neural Networks.",
+    "Reinforcement Learning Agents.",
     "Low-Level C / C++ Systems.",
     "Full-Stack Web & Mobile Apps."
   ];
@@ -466,7 +452,7 @@ function renderSkills() {
 }
 
 // --- PROJECTS RENDERER & FILTER ---
-function renderProjects(filterCategory = "bci-ai", searchQuery = "") {
+function renderProjects(filterCategory = "ai-ml", searchQuery = "") {
   const grid = document.getElementById("projects-grid");
   if (!grid) return;
 
@@ -559,7 +545,7 @@ function openProjectModal(projectId) {
   modalContent.innerHTML = `
     <div style="margin-bottom: 1.5rem;">
       <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap;">
-        <span class="badge badge-bci">${project.category.toUpperCase()}</span>
+        <span class="badge badge-cyber">${project.category.toUpperCase()}</span>
         <span class="project-grade-badge perfect">${project.score}</span>
         <span class="text-dim font-mono" style="font-size: 0.85rem;">${project.date}</span>
       </div>
@@ -613,9 +599,9 @@ function initTerminal() {
 
   const commands = {
     help: () => `Available Commands:
-  <span class="command-highlight">cat bio.txt</span>  - Display BCI & AI student profile summary
-  <span class="command-highlight">skills</span>       - List BCI, ML & software proficiencies
-  <span class="command-highlight">projects</span>     - List top projects & BCI research
+  <span class="command-highlight">cat bio.txt</span>  - Display Machine Learning & AI profile summary
+  <span class="command-highlight">skills</span>       - List ML, AI & software engineering skills
+  <span class="command-highlight">projects</span>     - List top projects & scores
   <span class="command-highlight">linkedin</span>     - Open LinkedIn profile URL
   <span class="command-highlight">github</span>       - Open GitHub profile URL
   <span class="command-highlight">contact</span>      - Display email & social links
@@ -628,19 +614,19 @@ GitHub: <a href="${PORTFOLIO_DATA.profile.github}" target="_blank" class="text-c
 Email: <a href="mailto:${PORTFOLIO_DATA.profile.email}" class="text-cyan">${PORTFOLIO_DATA.profile.email}</a>
 ${PORTFOLIO_DATA.profile.bio}`,
 
-    skills: () => `<span class="output-success">Verified BCI & AI Competencies:</span>
-• BCI & Neurotech (EEG Signal Processing, FFT Spectrum, Intention Decoding)
-• AI & Machine Learning (Neural Networks, Q-Learning RL, Logistic/Linear Regression)
-• Software Engineering (Python, C/C++, Flutter, Supabase, Django, NestJS)
-• Systems & DevOps (Docker, Linux Kernel, REST APIs)`,
+    skills: () => `<span class="output-success">Verified Engineering Competencies:</span>
+• Machine Learning & AI (Neural Networks, Q-Learning RL, Linear/Logistic Regression, EEG Signal Processing)
+• Algorithms & Systems (Minimax Alpha-Beta, C/C++, POSIX Unix Shell, 3D Raycasting)
+• Software Engineering (Python, Flutter, Supabase, Django, React, NestJS)
+• Tools & Infrastructure (Git, Docker, Linux, REST APIs, WebSockets)`,
 
-    projects: () => `<span class="output-success">Featured BCI & Engineering Projects:</span>
-1. Total Perspective Vortex  Python  • Brainwave EEG Interface [125%]
-2. Darkey App .............. Flutter • Rental Opportunity App [Founder]
-3. Learn2Slither ........... Python  • Q-Learning Snake Agent [101%]
-4. Multilayer Perceptron ... Python  • Deep Neural Network [100%]
-5. ft_linear_regression .... Python  • Gradient Descent Model [125%]
-6. Gomoku AI ............... C++     • Minimax Alpha-Beta [125%]`,
+    projects: () => `<span class="output-success">Featured AI & Engineering Projects:</span>
+1. Total Perspective Vortex  Python  • Brainwave Signal Interface [125%]
+2. Learn2Slither ........... Python  • Q-Learning Snake Agent [101%]
+3. Multilayer Perceptron ... Python  • Deep Neural Network [100%]
+4. ft_linear_regression .... Python  • Gradient Descent Model [125%]
+5. Gomoku AI ............... C++     • Minimax Alpha-Beta [125%]
+6. Darkey App .............. Flutter • Rental Opportunity App [Founder]`,
 
     linkedin: () => `Opening LinkedIn profile <a href="${PORTFOLIO_DATA.profile.linkedin}" target="_blank" class="text-orange">${PORTFOLIO_DATA.profile.linkedin}</a>`,
     github: () => `Redirecting to <a href="${PORTFOLIO_DATA.profile.github}" target="_blank" class="text-cyan">${PORTFOLIO_DATA.profile.github}</a>`,
@@ -666,7 +652,7 @@ GitHub: <a href="${PORTFOLIO_DATA.profile.github}" target="_blank" class="text-c
         return;
       }
 
-      const promptHtml = `<span class="prompt-user">aatki@bci-lab</span>:<span class="prompt-dir">~</span>$&nbsp;${cmd}<br>`;
+      const promptHtml = `<span class="prompt-user">aatki@ai-engine</span>:<span class="prompt-dir">~</span>$&nbsp;${cmd}<br>`;
 
       if (commands[cmd]) {
         line.innerHTML = promptHtml + commands[cmd]();
@@ -705,7 +691,7 @@ function initEventListeners() {
   const searchInput = document.getElementById("project-search");
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
-      const activeFilter = document.querySelector(".filter-btn.active")?.getAttribute("data-filter") || "bci-ai";
+      const activeFilter = document.querySelector(".filter-btn.active")?.getAttribute("data-filter") || "ai-ml";
       renderProjects(activeFilter, e.target.value);
     });
   }
@@ -725,22 +711,84 @@ function initEventListeners() {
     });
   });
 
-  const contactForm = document.getElementById("contact-form");
+
+  // ─── EMAIL JS INIT ──────────────────────────────────────────────────────────
+  // Replace the three EMAILJS_* placeholders below with your actual EmailJS IDs.
+  // See: https://www.emailjs.com/docs/sdk/installation/
+  const EMAILJS_PUBLIC_KEY  = "YOUR_PUBLIC_KEY";   // Account → API Keys
+  const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // Email Services tab
+  const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // Email Templates tab
+
+  if (EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+  }
+
+  const contactForm   = document.getElementById("contact-form");
+  const submitBtn     = document.getElementById("contact-submit");
+  const btnText       = document.getElementById("contact-btn-text");
+  const btnSpinner    = document.getElementById("contact-btn-spinner");
+  const statusEl      = document.getElementById("contact-status");
+
+  function setStatus(msg, color) {
+    if (!statusEl) return;
+    statusEl.textContent = msg;
+    statusEl.style.color = color;
+  }
+
   if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
+    contactForm.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const name = document.getElementById("contact-name").value;
-      const email = document.getElementById("contact-email").value;
-      const msg = document.getElementById("contact-message").value;
 
-      const mailtoUrl = `mailto:aichaatki@gmail.com?subject=Portfolio%20Inquiry%20from%20${encodeURIComponent(name)}&body=Name:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0A%0AMessage:%0A${encodeURIComponent(msg)}`;
+      const name    = document.getElementById("contact-name").value.trim();
+      const email   = document.getElementById("contact-email").value.trim();
+      const subject = document.getElementById("contact-subject")?.value.trim() || "Portfolio Inquiry";
+      const msg     = document.getElementById("contact-message").value.trim();
 
-      window.location.href = mailtoUrl;
-      showToast("Opening your email client to send message to aichaatki@gmail.com!");
-      contactForm.reset();
+      // Basic validation
+      if (!name || !email || !msg) {
+        setStatus("Please fill in all required fields.", "#f87171");
+        return;
+      }
+
+      // If EmailJS is not yet configured, fall back to mailto:
+      if (EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
+        const mailtoUrl = `mailto:aichaatki@gmail.com?subject=${encodeURIComponent(subject + " — " + name)}&body=Name:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0A%0AMessage:%0A${encodeURIComponent(msg)}`;
+        window.open(mailtoUrl, "_blank");
+        showToast("Opening your email client…");
+        contactForm.reset();
+        return;
+      }
+
+      // Show loading state
+      if (submitBtn)  submitBtn.disabled = true;
+      if (btnText)    btnText.style.display    = "none";
+      if (btnSpinner) btnSpinner.style.display = "inline";
+      setStatus("", "");
+
+      try {
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+          from_name: name,
+          reply_to:  email,
+          subject:   subject,
+          message:   msg,
+          to_email:  "aichaatki@gmail.com",
+        });
+
+        setStatus("✅ Message sent! I'll get back to you soon.", "#34d399");
+        showToast("Message sent to aichaatki@gmail.com!");
+        contactForm.reset();
+      } catch (err) {
+        console.error("EmailJS error:", err);
+        setStatus("❌ Something went wrong. Try emailing aichaatki@gmail.com directly.", "#f87171");
+      } finally {
+        if (submitBtn)  submitBtn.disabled = false;
+        if (btnText)    btnText.style.display    = "inline";
+        if (btnSpinner) btnSpinner.style.display = "none";
+      }
     });
   }
 }
+
 
 // --- TOAST NOTIFICATION ---
 function showToast(msg) {
