@@ -777,7 +777,8 @@ function initEventListeners() {
         contactForm.reset();
       } catch (err) {
         console.error("EmailJS error:", err);
-        setStatus("❌ Something went wrong. Try emailing aichaatki@gmail.com directly.", "#f87171");
+        const detail = err?.text || err?.message || JSON.stringify(err);
+        setStatus(`❌ Error: ${detail}`, "#f87171");
       } finally {
         if (submitBtn)  submitBtn.disabled = false;
         if (btnText)    btnText.style.display    = "inline";
