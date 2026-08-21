@@ -223,6 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initTerminal();
   initEventListeners();
   initScrollObserver();
+  initScrollToTop();
 });
 
 // --- BRAIN NEURONAL NETWORK SIMULATION CANVAS ---
@@ -675,6 +676,20 @@ function initEventListeners() {
     mobileToggle.addEventListener("click", () => {
       navMenu.classList.toggle("mobile-open");
     });
+
+    // Close mobile nav when any nav link is clicked
+    navMenu.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("mobile-open");
+      });
+    });
+
+    // Close mobile nav when clicking outside of it
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+        navMenu.classList.remove("mobile-open");
+      }
+    });
   }
 
   const filterBtns = document.querySelectorAll(".filter-btn");
@@ -803,25 +818,49 @@ function showToast(msg) {
   }, 3500);
 }
 
+
 // --- SCROLL OBSERVER & NAV ACTIVE ---
 function initScrollObserver() {
-  const sections = document.querySelectorAll("section");
+  const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
 
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
+  // Use IntersectionObserver for accurate active nav tracking
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${entry.target.id}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    },
+    {
+      rootMargin: "-40% 0px -55% 0px",
+      threshold: 0
+    }
+  );
 
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active");
-      }
-    });
+  sections.forEach(section => observer.observe(section));
+}
+
+// --- SCROLL-TO-TOP BUTTON ---
+function initScrollToTop() {
+  const btn = document.getElementById("scroll-top-btn");
+  if (!btn) return;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      btn.classList.add("visible");
+    } else {
+      btn.classList.remove("visible");
+    }
+  }, { passive: true });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
