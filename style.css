@@ -202,6 +202,11 @@ body {
   letter-spacing: 0.5px;
 }
 
+.logo-text {
+  display: inline-flex;
+  align-items: center;
+}
+
 .logo-accent { color: var(--color-orange); }
 .logo-dot { color: var(--color-cyan); }
 
