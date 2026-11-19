@@ -121,7 +121,7 @@
               <div class="stat-label">Computer Science</div>
             </div>
             <div class="stat-card">
-              <div class="stat-value text-cyan">44+</div>
+              <div class="stat-value text-cyan" id="github-repo-count">46</div>
               <div class="stat-label">GitHub Repositories</div>
             </div>
           </div>
@@ -243,18 +243,21 @@
     <section id="projects" class="section">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">// INTERACTIVE DEMOS & PORTFOLIO</span>
-          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
-          <p class="section-desc">Run live AI web simulations directly in your browser or inspect code repositories on <a href="https://github.com/RadiantVixen" target="_blank" class="text-orange">GitHub</a>.</p>
+          <span class="section-subtitle">// PROJECT ARCHIVE</span>
+          <h2 class="section-title">Project <span class="text-gradient">Archive</span></h2>
+          <p class="section-desc">Explore projects across machine learning, web development, infrastructure, algorithms, and systems. Each project links to its GitHub repository or a GitHub search when no public repository is listed.</p>
         </div>
 
         <!-- Filter & Search Bar -->
         <div class="filter-wrapper">
           <div class="filter-tabs" id="project-filters">
-            <button class="filter-btn active" data-filter="ai-ml">🤖 AI & Machine Learning</button>
-            <button class="filter-btn" data-filter="mobile">📱 Mobile & Startup</button>
-            <button class="filter-btn" data-filter="fullstack">⚡ Full-Stack & Systems</button>
-            <button class="filter-btn" data-filter="all">📦 All Projects</button>
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="data-ml">Data Science &amp; ML</button>
+            <button class="filter-btn" data-filter="web-mobile">Web, Mobile &amp; Web3</button>
+            <button class="filter-btn" data-filter="devops">DevOps &amp; Infrastructure</button>
+            <button class="filter-btn" data-filter="algorithms">Algorithms &amp; Math</button>
+            <button class="filter-btn" data-filter="systems">Systems &amp; Networking</button>
+            <button class="filter-btn" data-filter="cpp">C++ Modules</button>
           </div>
 
           <div class="search-box">
@@ -262,7 +265,7 @@
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input type="text" id="project-search" placeholder="Search AI models, Python, Flutter, C++...">
+            <input type="text" id="project-search" placeholder="Search projects, technologies, or topics...">
           </div>
         </div>
 

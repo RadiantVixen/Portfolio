@@ -1,0 +1,11 @@
+cd ~/goinfre   # or /goinfre/$USER                     
+curl -L "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64" -o vscode.tar.gz
+tar -xzf vscode.tar.gz && rm vscode.tar.gz
+mv VSCode-linux-x64 vscode
+
+# run it
+~/goinfre/vscode/code
+
+# optional: add an alias so you can just type "code"
+echo 'alias code="$HOME/goinfre/vscode/bin/code"' >> ~/.zshrc && source ~/.zshrc
+

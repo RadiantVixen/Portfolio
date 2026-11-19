@@ -1,0 +1,257 @@
+1. Data Science and Machine Learning
+These are especially relevant to your Machine Learning, Data Science and AI profiles.
+1. Uber — November 2026
+Description: Taxi-demand forecasting using historical time-series data. The objective is to understand temporal patterns and predict future demand.
+- Work: temporal analysis, stationarity, forecasting, model comparison and validation.
+- Technologies: Python, Pandas, NumPy, statistical/time-series libraries.
+- Methods: moving averages, exponential smoothing, SARIMA, AIC-based model selection.
+- Skills learned: time-series analysis, forecasting, temporal patterns, statistical modeling, model evaluation and MAE.
+Your own implementation also includes comparing forecasting approaches and evaluating prediction errors.
+2. Understanding Customer — November 2026
+Description: Natural-language intent classification. Given a text message, predict the intention expressed by the user.
+- Work: text preprocessing, sequence representation and intent classification.
+- Technologies: Python, NLP and deep-learning libraries, depending on your implementation.
+- Methods covered by the assignment: RNN, LSTM, Transformer/BERT and CNN approaches.
+- Skills learned: NLP, text classification, sequence modeling, neural networks, tokenization, model training and evaluation.
+Important: The project topic covers these architectures; don't put all of them in your CV unless you actually implemented them.
+3. mySpotify — November 2026
+Description: A music recommendation system that explores different ways of recommending tracks to users.
+- Work: recommending music using different recommendation strategies.
+- Methods: non-personalized recommendation, content-based filtering and collaborative filtering.
+- Technologies: Python and data-processing / recommendation libraries, depending on your implementation.
+- Skills learned: recommender systems, similarity measures, user-item interactions, recommendation strategies and recommendation evaluation.
+This is a particularly useful project for demonstrating applied ML beyond classification and regression.
+4. Churn — October 2026
+Description: Customer churn prediction: estimate whether a customer is likely to stop using a service.
+- Work: analyze customer data and predict churn.
+- Technologies: Python, Pandas, NumPy and machine-learning libraries, depending on your implementation.
+- Methods: classification and feature-based predictive modeling.
+- Skills learned: classification, data preprocessing, feature engineering, class imbalance, model evaluation and customer analytics.
+I don't have enough evidence to name your exact model or claim that you used a particular algorithm such as Random Forest or XGBoost.
+5. Tweets [DEPRECATED] — October 2026
+Description: A deprecated project in your Data Science project history.
+- General area: social-media text/data analysis.
+- Potential technical areas: text preprocessing, NLP, data analysis and classification.
+- Technologies and algorithms: need repository verification.
+- Skills: depends on the actual implementation.
+Deprecated
+ I would keep it in your full project archive, but not automatically include it in a CV.
+6. Multilayer Perceptron — August 2026
+Description: Build a neural network from scratch rather than relying on a deep-learning framework.
+- Work: implement a multilayer feedforward neural network.
+- Technologies: Python, NumPy.
+- Methods: forward propagation, backpropagation, activation functions, loss calculation, mini-batch gradient descent and weight initialization.
+- Skills learned: neural-network architecture, computational graphs, derivatives, backpropagation, optimization, training and evaluation.
+This is one of your strongest projects for demonstrating actual understanding of neural networks.
+7. Learn2Slither — August 2026
+Description: Train an autonomous Snake agent using reinforcement learning.
+- Work: build an agent that learns to play Snake through interaction with its environment.
+- Technologies: Python, NumPy and a custom game environment.
+- Methods: Q-learning, state representation, reward design, exploration/exploitation and epsilon-greedy policy.
+- Skills learned: reinforcement learning, Markov decision processes, Bellman updates, reward engineering and agent training.
+8. DSLR — July 2026
+Description: Implement a multiclass logistic-regression classifier to predict a Hogwarts house from student data.
+- Work: data exploration, feature analysis and multiclass classification.
+- Technologies: Python, NumPy, Pandas and visualization tools.
+- Methods: One-vs-All logistic regression, sigmoid, gradient descent and model evaluation.
+- Skills learned: supervised learning, classification, optimization, statistics, feature analysis and evaluation metrics.
+Your project also involved implementing the learning algorithm rather than simply calling a ready-made classifier.
+9. Matrix — May 2026
+Description: Mathematical programming focused on vector and matrix manipulation.
+- Work: implement mathematical operations on vectors and matrices.
+- Technologies: C++ or the language used in your implementation; confirm the repository for the exact stack.
+- Concepts: vector operations, matrix operations, dimensions, transformations and linear algebra.
+- Skills learned: linear algebra, mathematical abstraction, numerical computation, operator/function design and algorithm implementation.
+10. Ready Set Boole — May 2026
+Description: Explore computer-related mathematics through Boolean algebra, set theory and space-filling curves.
+- Work: implement mathematical and logical exercises.
+- Technologies: C++ in common versions of this assignment; verify your repository for the exact language.
+- Concepts: Boolean expressions, truth tables, logical equivalence, set operations, normal forms, SAT and space-filling curves.
+- Skills learned: discrete mathematics, Boolean algebra, logic, parsing, mathematical reasoning and algorithm design.
+The assignment family includes exercises such as adders, multipliers, Gray codes, truth tables, NNF, CNF, SAT and powersets. 
+GitHub+1
+
+
+Reference for the Data Science project descriptions: a public 42 Data Science project portfolio documents the Uber, Understanding Customer and MySpotify assignment objectives. 
+GitHub
+
+
+2. Web and Mobile specialization
+These projects belong to the Web/Mobile specialization family. Their precise implementations and stacks need to be distinguished from generic descriptions of similarly named projects. 
+GitHub
+
+11. Music-room — May 2026
+Description: A Web/Mobile specialization project. The name suggests a music-room application, but I haven't found a reliable assignment specification tied to your exact repository.
+- Technologies: not confirmed.
+- Technical areas to investigate: frontend/backend development, application state, user interaction and potentially real-time communication.
+- Skills to record after inspecting the repository: architecture, API integration, application development and the actual framework used.
+I won't assume it is a synchronized music-streaming application without evidence.
+12. TokenizeArt — March 2026
+Description: A blockchain/Web3 project associated with creating NFTs on an EVM-compatible blockchain.
+- Technologies associated with the assignment family: Solidity, Hardhat and TypeScript.
+- Concepts: smart contracts, NFT creation, blockchain transactions, token standards and deployment.
+- Skills learned: smart-contract development, blockchain architecture, contract deployment and Web3 integration.
+A public 42 project listing describes TokenizeArt as NFT creation on an EVM-compatible blockchain. 
+GitLab+1
+
+13. Tokenizer — March 2026
+Description: A Web3 specialization project. Public 42 portfolios associate this project with creating a custom fungible token, but the exact assignment and your implementation need confirmation.
+- Potential technologies: Solidity, Hardhat, TypeScript and blockchain tooling.
+- Concepts: token contracts, smart-contract deployment, token standards and blockchain transactions.
+- Skills learned: smart contracts, token development, Web3 concepts and deployment.
+Don't confuse this project with a conventional NLP tokenizer: the public Web3 specialization context points toward blockchain. 
+ookamonu.pages.dev+1
+
+
+3. DevOps and infrastructure
+14. Inception of Things — March 2026
+Description: Learn container orchestration and infrastructure deployment using Kubernetes-related technologies.
+- Technologies: K3s, K3d, Vagrant, Docker and Kubernetes tooling.
+- Concepts: virtual machines, container orchestration, cluster configuration, networking, deployment and GitOps.
+- Skills learned: infrastructure automation, Kubernetes, containerization, service deployment and DevOps workflows.
+The assignment is commonly described as using K3d, K3s and Vagrant. 
+GitHub
+
+15. Inception — March 2024
+Description: Build a small infrastructure using Docker containers and configure services to communicate with each other.
+- Technologies: Docker, Docker Compose, Nginx, WordPress and MariaDB.
+- Concepts: containers, images, volumes, networks, environment variables, service dependencies and reverse proxies.
+- Skills learned: Linux administration, containerization, service configuration, networking, deployment and infrastructure troubleshooting.
+
+4. Mathematics and algorithmic projects
+16. ft_linear_regression — January 2026
+Description: Implement univariate linear regression from scratch to predict car prices based on mileage.
+- Technologies: Python, NumPy and visualization tools.
+- Methods: gradient descent, cost functions, parameter updates and feature scaling.
+- Skills learned: regression, optimization, derivatives, numerical computation, model evaluation and mathematical implementation.
+17. Gomoku — August 2026
+Description: Develop an AI opponent for the Gomoku board game.
+- Technologies: C++, SDL2, depending on the exact repository version.
+- Methods: Minimax/Negamax, Alpha-Beta pruning, heuristic evaluation and candidate move ordering.
+- Skills learned: adversarial search, game AI, algorithm optimization, state-space exploration and decision-making.
+Your repository description identifies a search-based game engine; this is AI through search and reasoning, not machine learning.
+
+5. Systems programming and software engineering
+These projects are part of the Common Core and demonstrate low-level programming, algorithms, operating systems, networking and software architecture.
+18. ft_transcendence — January 2025
+Description: Build a full-stack web application centered on a multiplayer Pong game.
+- Technologies: NestJS, React and the technologies in your implementation.
+- Concepts: frontend/backend architecture, authentication, OAuth, multiplayer, chat, matchmaking and persistent data.
+- Skills learned: full-stack development, API design, real-time applications, authentication, databases, application architecture and teamwork.
+19. ft_irc — April 2024
+Description: Implement an IRC server that allows multiple clients to connect and communicate.
+- Technologies: C++98, TCP sockets and system networking APIs.
+- Concepts: client-server architecture, socket programming, IRC protocol, channels, user management and event-driven communication.
+- Skills learned: networking, TCP/IP, concurrency or multiplexed I/O, protocol implementation and server architecture.
+20. cub3d — October 2023
+Description: Build a Wolfenstein-3D-style graphical game using raycasting.
+- Technologies: C, MiniLibX, math libraries and graphics APIs.
+- Concepts: raycasting, 2D map parsing, textures, player movement, collision detection and rendering.
+- Skills learned: computer graphics, geometry, trigonometry, coordinate systems, rendering and performance optimization.
+21. NetPractice — August 2023
+Description: Solve networking configuration problems by constructing valid network topologies.
+- Technologies: networking concepts and configuration exercises.
+- Concepts: IPv4, subnet masks, CIDR, routing, gateways, network addresses and host addresses.
+- Skills learned: TCP/IP fundamentals, subnetting, routing and network troubleshooting.
+22. Philosophers — July 2023
+Description: Solve the Dining Philosophers concurrency problem.
+- Technologies: C, POSIX threads and synchronization primitives.
+- Concepts: threads, mutexes, shared resources, race conditions, deadlocks and timing.
+- Skills learned: concurrency, synchronization, thread lifecycle, resource management and debugging concurrent programs.
+23. minishell — June 2023
+Description: Recreate a simplified Unix shell.
+- Technologies: C, Unix system calls and shell APIs.
+- Concepts: parsing, command execution, fork, execve, pipes, redirections, environment variables, signals and built-in commands.
+- Skills learned: operating systems, process management, file descriptors, inter-process communication, parsing and memory management.
+24. pipex — March 2023
+Description: Reproduce the behavior of shell pipes and redirections.
+- Technologies: C and Unix system calls.
+- Concepts: pipe, fork, dup2, execve, file descriptors and process synchronization.
+- Skills learned: process creation, IPC, command execution, file-descriptor management and Unix programming.
+25. push_swap — February 2023
+Description: Sort a list of integers using two stacks and a restricted set of operations while minimizing the number of operations.
+- Technologies: C.
+- Concepts: stack data structures, sorting algorithms, indexing and operation optimization.
+- Skills learned: algorithm design, complexity analysis, data structures, problem-solving and optimization.
+26. so_long — January 2023
+Description: Create a small 2D game where a player navigates a map, collects items and reaches an exit.
+- Technologies: C and MiniLibX.
+- Concepts: graphics, maps, movement, keyboard input, collision detection and game state.
+- Skills learned: event handling, graphical programming, parsing, memory management and game logic.
+27. Born2beroot — November 2022
+Description: Set up and administer a Linux virtual machine with security and system-management requirements.
+- Technologies: Debian or another permitted Linux distribution, VirtualBox or equivalent virtualization software, SSH and system utilities.
+- Concepts: users, groups, permissions, partitions, services, SSH, firewall rules, monitoring and system administration.
+- Skills learned: Linux administration, security fundamentals, virtualization, networking, shell commands and server configuration.
+28. get_next_line — November 2022
+Description: Implement a function that reads a file descriptor one line at a time.
+- Technologies: C, file descriptors and static variables.
+- Concepts: buffered reading, memory allocation, string manipulation and persistent state.
+- Skills learned: file I/O, dynamic memory, buffer management, static variables and edge-case handling.
+29. ft_printf — November 2022
+Description: Reimplement the standard C printf function.
+- Technologies: C and variadic arguments.
+- Concepts: format-string parsing, conversion specifiers, variadic functions and output formatting.
+- Skills learned: low-level C, va_list, parsing, formatting, memory and library implementation.
+30. Libft — October 2022
+Description: Build your own C library by recreating standard C library functions and useful additional utilities.
+- Technologies: C, Makefile and compiler/toolchain.
+- Concepts: string manipulation, memory operations, character checks, linked lists and utility functions.
+- Skills learned: C fundamentals, pointers, memory allocation, data structures, static libraries and compilation.
+These Common Core descriptions align with public 42 curriculum repositories and project indexes. 
+GitHub+2
+
+6. C++ Modules — November 2023 to January 2024
+You completed CPP Module 00 through CPP Module 09. These are ten separate curriculum modules, so I'm listing all ten rather than hiding them under one generic C++ entry.
+
+The modules progressively teach C++ programming, object-oriented design, memory, polymorphism, templates and the Standard Template Library.
+31. CPP Module 00
+- Description: Introduction to C++ and object-oriented programming.
+- Technologies: C++98, compiler and Makefile.
+- Concepts: namespaces, classes, member functions, standard I/O, initialization and basic object design.
+- Skills: C++ syntax, classes, encapsulation and object-oriented fundamentals.
+
+32. CPP Module 01
+- Description: Explore memory allocation, references and pointers in C++.
+- Concepts: stack vs heap, new, delete, references, pointers to members and switch statements.
+- Skills: memory management, object lifetime, references, pointers and resource handling.
+
+33. CPP Module 02
+- Description: Learn ad-hoc polymorphism and operator overloading.
+- Concepts: Orthodox Canonical Form, fixed-point numbers, constructors, copy assignment and arithmetic/comparison operators.
+- Skills: operator overloading, class design, copy semantics and encapsulation.
+
+34. CPP Module 03
+- Description: Study inheritance and class relationships.
+- Concepts: base classes, derived classes, access modifiers and multiple inheritance.
+- Skills: inheritance, code reuse, class hierarchies and object-oriented design.
+
+35. CPP Module 04
+- Description: Explore subtype polymorphism and abstract classes.
+- Concepts: virtual functions, abstract classes, interfaces, deep copies and runtime dispatch.
+- Skills: dynamic polymorphism, virtual methods, abstraction and memory ownership.
+
+36. CPP Module 05
+- Description: Learn exception handling and structured error management.
+- Concepts: exceptions, try, catch, throw, custom exception classes and nested exception handling.
+- Skills: error handling, exception safety and robust class design.
+
+37. CPP Module 06
+- Description: Understand C++ type conversions.
+- Concepts: static casts, reinterpret casts, const casts, dynamic casts and scalar conversions.
+- Skills: type systems, casting, runtime type identification and safe conversions.
+
+38. CPP Module 07
+- Description: Introduce function and class templates.
+- Concepts: generic functions, generic classes and template instantiation.
+- Skills: generic programming, reusable code and compile-time abstraction.
+
+39. CPP Module 08
+- Description: Work with templated containers, iterators and algorithms.
+- Concepts: STL containers, iterators, algorithms and custom container behavior.
+- Skills: Standard Template Library, generic programming, iterators and container abstraction.
+
+40. CPP Module 09
+- Description: Apply STL containers and algorithms to more substantial problems.
+- Concepts: container selection, sorting, data organization and algorithm implementation.
+- Skills: STL, data structures, algorithmic problem-solving and performance considerations.
