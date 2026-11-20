@@ -195,16 +195,6 @@ const PORTFOLIO_DATA = {
       github: "https://github.com/RadiantVixen/Tokenizer"
     },
     {
-      id: "ft-transcendence",
-      title: "ft_transcendence — Real-Time Web Application",
-      category: "web-mobile",
-      date: "Jan 2025",
-      shortDesc: "Full-stack multiplayer Pong application with real-time features.",
-      fullDesc: "A 42 Network capstone web application centered on multiplayer Pong, with frontend and backend architecture, real-time communication, authentication, and persistent data.",
-      tags: ["React", "NestJS", "PostgreSQL", "WebSockets", "OAuth"],
-      github: "https://github.com/RadiantVixen/ft-transcendence"
-    },
-    {
       id: "inception-of-things",
       title: "Inception of Things",
       category: "devops",
@@ -287,17 +277,6 @@ const PORTFOLIO_DATA = {
       github: "https://github.com/RadiantVixen/cub3d"
     },
     {
-      id: "netpractice",
-      title: "NetPractice",
-      category: "systems",
-      date: "Aug 2023",
-      shortDesc: "Solve network configuration exercises and build valid topologies.",
-      fullDesc: "A networking exercise project covering IPv4 addressing, subnet masks, CIDR, routing, gateways, and network troubleshooting.",
-      tags: ["Networking", "IPv4", "Subnetting", "Routing"],
-      github: "https://github.com/search?q=user%3ARadiantVixen+NetPractice&type=repositories",
-      githubLabel: "Search GitHub"
-    },
-    {
       id: "philosophers",
       title: "Philosophers",
       category: "systems",
@@ -338,17 +317,6 @@ const PORTFOLIO_DATA = {
       github: "https://github.com/RadiantVixen/so_long"
     },
     {
-      id: "born2beroot",
-      title: "Born2beroot",
-      category: "systems",
-      date: "Nov 2022",
-      shortDesc: "Set up and administer a Linux virtual machine.",
-      fullDesc: "A system-administration project involving Linux installation and configuration, users and permissions, SSH, firewall setup, monitoring, and virtualization.",
-      tags: ["Linux", "System Administration", "Virtualization", "Security"],
-      github: "https://github.com/search?q=user%3ARadiantVixen+Born2beroot&type=repositories",
-      githubLabel: "Search GitHub"
-    },
-    {
       id: "get-next-line",
       title: "get_next_line",
       category: "systems",
@@ -379,103 +347,13 @@ const PORTFOLIO_DATA = {
       github: "https://github.com/RadiantVixen/libft"
     },
     {
-      id: "cpp-module-00",
-      title: "CPP Module 00",
-      category: "cpp",
+      id: "cpp-modules",
+      title: "C++ Modules 00–09",
+      category: "systems",
       date: "Nov 2023 – Jan 2024",
-      shortDesc: "C++ fundamentals and object-oriented programming.",
-      fullDesc: "Introduces C++ syntax and object-oriented fundamentals, including classes, member functions, standard I/O, initialization, and encapsulation.",
-      tags: ["C++98", "Classes", "OOP", "Encapsulation"],
-      github: "https://github.com/RadiantVixen/cpp"
-    },
-    {
-      id: "cpp-module-01",
-      title: "CPP Module 01",
-      category: "cpp",
-      date: "Nov 2023 – Jan 2024",
-      shortDesc: "Memory allocation, references, pointers, and object lifetime.",
-      fullDesc: "Explores stack and heap allocation, new and delete, references, pointers to members, and resource handling.",
-      tags: ["C++98", "Memory Management", "References", "Pointers"],
-      github: "https://github.com/RadiantVixen/cpp"
-    },
-    {
-      id: "cpp-module-02",
-      title: "CPP Module 02",
-      category: "cpp",
-      date: "Nov 2023 – Jan 2024",
-      shortDesc: "Ad-hoc polymorphism, fixed-point numbers, and operator overloading.",
-      fullDesc: "Covers fixed-point numbers, Orthodox Canonical Form, constructors, copy assignment, and arithmetic or comparison operator overloading.",
-      tags: ["C++98", "Operator Overloading", "Class Design"],
-      github: "https://github.com/RadiantVixen/cpp"
-    },
-    {
-      id: "cpp-module-03",
-      title: "CPP Module 03",
-      category: "cpp",
-      date: "Nov 2023 – Jan 2024",
-      shortDesc: "Inheritance and class relationships.",
-      fullDesc: "Practices base and derived classes, access modifiers, and class hierarchies as tools for reuse and object-oriented design.",
-      tags: ["C++98", "Inheritance", "OOP"],
-      github: "https://github.com/RadiantVixen/cpp"
-    },
-    {
-      id: "cpp-module-04",
-      title: "CPP Module 04",
-      category: "cpp",
-      date: "Nov 2023 – Jan 2024",
-      shortDesc: "Subtype polymorphism, abstract classes, and interfaces.",
-      fullDesc: "Explores virtual functions, abstract classes, runtime dispatch, deep copies, and polymorphic class design.",
-      tags: ["C++98", "Polymorphism", "Virtual Functions", "Abstraction"],
-      github: "https://github.com/RadiantVixen/cpp"
-    },
-    {
-      id: "cpp-module-05",
-      title: "CPP Module 05",
-      category: "cpp",
-      date: "Nov 2023 – Jan 2024",
-      shortDesc: "Exception handling and structured error management.",
-      fullDesc: "Practices try, catch, and throw, custom exception types, and robust error handling in C++.",
-      tags: ["C++98", "Exceptions", "Error Handling"],
-      github: "https://github.com/RadiantVixen/cpp"
-    },
-    {
-      id: "cpp-module-06",
-      title: "CPP Module 06",
-      category: "cpp",
-      date: "Nov 2023 – Jan 2024",
-      shortDesc: "C++ type conversions and casts.",
-      fullDesc: "Studies scalar conversions, static, reinterpret, const, and dynamic casts, and runtime type identification.",
-      tags: ["C++98", "Type Conversions", "Casts", "RTTI"],
-      github: "https://github.com/RadiantVixen/cpp"
-    },
-    {
-      id: "cpp-module-07",
-      title: "CPP Module 07",
-      category: "cpp",
-      date: "Nov 2023 – Jan 2024",
-      shortDesc: "Function and class templates for generic programming.",
-      fullDesc: "Introduces generic functions and classes, template instantiation, and compile-time abstraction.",
-      tags: ["C++98", "Templates", "Generic Programming"],
-      github: "https://github.com/RadiantVixen/cpp"
-    },
-    {
-      id: "cpp-module-08",
-      title: "CPP Module 08",
-      category: "cpp",
-      date: "Nov 2023 – Jan 2024",
-      shortDesc: "Templated containers, iterators, and algorithms.",
-      fullDesc: "Works with STL containers, iterators, algorithms, and custom container behavior.",
-      tags: ["C++98", "STL", "Containers", "Iterators"],
-      github: "https://github.com/RadiantVixen/cpp"
-    },
-    {
-      id: "cpp-module-09",
-      title: "CPP Module 09",
-      category: "cpp",
-      date: "Nov 2023 – Jan 2024",
-      shortDesc: "Apply STL containers and algorithms to larger problems.",
-      fullDesc: "Applies STL containers and algorithms to substantial problem-solving tasks, with attention to data organization and performance.",
-      tags: ["C++98", "STL", "Algorithms", "Data Structures"],
+      shortDesc: "Ten C++ modules covering object-oriented design, memory, polymorphism, templates, and the STL.",
+      fullDesc: "A single repository containing CPP Modules 00 through 09. The curriculum progresses from C++ fundamentals and memory management through inheritance, polymorphism, exceptions, casts, templates, and STL containers and algorithms.",
+      tags: ["C++98", "Modules 00–09", "OOP", "Memory Management", "Polymorphism", "Exceptions", "Templates", "STL"],
       github: "https://github.com/RadiantVixen/cpp"
     }
   ],
@@ -520,7 +398,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initParticleCanvas();
   initTypewriter();
   renderSkills();
-  renderProjects("all");
+  renderProjects("data-ml");
   renderTimeline();
   initTerminal();
   initEventListeners();
@@ -761,8 +639,7 @@ const PROJECT_CATEGORY_LABELS = {
   "web-mobile": "Web, Mobile & Web3",
   devops: "DevOps & Infrastructure",
   algorithms: "Algorithms & Mathematics",
-  systems: "Systems & Networking",
-  cpp: "C++ Modules"
+  systems: "Systems & Networking"
 };
 
 function escapeHtml(value) {
@@ -783,6 +660,20 @@ async function updateGitHubRepositoryCount() {
     const repositoryCount = document.getElementById("github-repo-count");
     if (repositoryCount) repositoryCount.textContent = String(repos.length);
 
+    const publicRepos = repos.filter(repo =>
+      !repo.private &&
+      repo.html_url &&
+      !["ft-transcendence"].includes((repo.name || "").toLowerCase().replace(/_/g, "-"))
+    );
+    const publicRepoUrls = new Set(
+      publicRepos.map(repo => repo.html_url.toLowerCase().replace(/\/+$/, ""))
+    );
+
+    PORTFOLIO_DATA.projects = PORTFOLIO_DATA.projects.filter(project =>
+      project.github &&
+      publicRepoUrls.has(project.github.toLowerCase().replace(/\/+$/, ""))
+    );
+
     const knownUrls = new Set(
       PORTFOLIO_DATA.projects
         .map(project => project.github)
@@ -790,10 +681,8 @@ async function updateGitHubRepositoryCount() {
         .map(url => url.toLowerCase())
     );
 
-    let addedProjects = 0;
-
-    repos.forEach(repo => {
-      if (!repo.html_url || repo.name === "RadiantVixen") return;
+    publicRepos.forEach(repo => {
+      if ((repo.name || "").toLowerCase() === "radiantvixen") return;
       if (knownUrls.has(repo.html_url.toLowerCase())) return;
 
       const name = repo.name || "Untitled Project";
@@ -812,7 +701,7 @@ async function updateGitHubRepositoryCount() {
       } else if (/(matrix|boole|gomoku|push|swaps|pool|python_pool)/.test(lowerName)) {
         category = "algorithms";
       } else if (/(cpp|c\+\+|corewar)/.test(lowerName)) {
-        category = "cpp";
+        category = "systems";
       } else if (/(shell|irc|minishell|pipex|philosopher|cub3d|libft|printf|line|born|netpractice|inception)/.test(lowerName)) {
         category = "systems";
       }
@@ -842,12 +731,11 @@ async function updateGitHubRepositoryCount() {
       });
 
       knownUrls.add(repo.html_url.toLowerCase());
-      addedProjects += 1;
     });
 
-    if (addedProjects > 0) {
-      renderProjects("all");
-    }
+    const activeFilter = document.querySelector(".filter-btn.active")?.getAttribute("data-filter") || "data-ml";
+    const searchQuery = document.getElementById("project-search")?.value || "";
+    renderProjects(activeFilter, searchQuery);
   } catch (error) {
     console.warn("Could not update GitHub repository count:", error);
   }
@@ -1117,7 +1005,7 @@ function initEventListeners() {
   const searchInput = document.getElementById("project-search");
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
-      const activeFilter = document.querySelector(".filter-btn.active")?.getAttribute("data-filter") || "ai-ml";
+      const activeFilter = document.querySelector(".filter-btn.active")?.getAttribute("data-filter") || "data-ml";
       renderProjects(activeFilter, e.target.value);
     });
   }
